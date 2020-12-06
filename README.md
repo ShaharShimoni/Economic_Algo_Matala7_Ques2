@@ -15,18 +15,18 @@ and returns the payments vector,In shekels, with an accuracy of one penny (NIS 0
 If the rule of choice is not monotonic - the function payments throws an appropriate exception. <br />
 <br />
 I have tested my function on several different selection functions:<br />
-#The first function:<br />
+**The first function:**<br />
 Takes all the values that are over 7 <br />
 input: <br />
 [10, 9, 8, 7, 6, 5, 4] <br />
 output: <br />
 Payment of each one is= [7, 7, 7, 0, 0, 0, 0] <br />
 <br />
-# The Second function: <br />
+**The Second function:** <br />
 Takes the second max value - (not monotonic) <br />
 output: Exception: not monotonic  <br />
  <br />
-# The Third function:<br />
+**The Third function:**<br />
 Algorithm Chamdany A- from class. <br />
 [10, 9, 8, 7, 6, 5, 4] <br />
 Payment of each one is= [5, 5, 5, 5, 5, 0, 0] <br />
