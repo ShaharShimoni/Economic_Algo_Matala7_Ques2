@@ -37,14 +37,14 @@ def choices3 (values: List[float])->List[bool]: # Algorithm Chamdany A
     Is_Selected = [];
     values.sort();
     values.reverse();
-    print (values);
+    #print (values);
     Mg=100;
     Mg_Array = [];
     for i in values:
         Mg_Array.append(20);
     sum=0;
     flag=True; #can insert to bag
-    print(Mg_Array);
+    #print(Mg_Array);
     for i in Mg_Array:
         if(sum+i<=Mg and flag==True):
             sum+=i;
@@ -64,7 +64,7 @@ def payments (values: List[float])->List[float]:
    for i in values:  #Open payment array in the same size as values
        payment.append(0);
 
-   Is_Chosen = choices(values);
+   Is_Chosen = choices3(values);
    print("is chosen", Is_Chosen);
    for i in reversed(range(len(values))):
         if (Is_Chosen[i] == False):
